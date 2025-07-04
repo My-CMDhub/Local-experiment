@@ -140,7 +140,7 @@ function createNavbar() {
 </div>
               <div class="nav-left">
               
-                  <a href="Intro.html" class="nav-link">Home</a>
+                  <a href="Index.html" class="nav-link">Home</a>
                   <div class="dropdown">
                       <a href="#" class="nav-link">Products</a>
                       <div class="dropdown-content">
@@ -152,7 +152,7 @@ function createNavbar() {
                   </div>
                   <a href="corporate.html" class="nav-link">Corporate</a>
               </div>
-              <a href="Intro.html" class="logo-container">
+              <a href="Index.html" class="logo-container">
                   <img src="Images/logo.webp" class="logo" alt="Logo">
                   <span class="hover-text">CCBK</span>
               </a>
@@ -319,7 +319,7 @@ function initializeNavbarEffects() {
 function handleProductLinkClick(event) {
   event.preventDefault();
   const product = event.target.textContent.trim();
-  const isMainPage = window.location.pathname.includes("Intro.html");
+  const isMainPage = window.location.pathname.includes("Index.html");
 
   if (isMainPage) {
       const section = document.querySelector(`.${product}`);
@@ -327,13 +327,13 @@ function handleProductLinkClick(event) {
           section.scrollIntoView({ behavior: "smooth" });
       }
   } else {
-      window.location.href = `Intro.html#${product}`;
+      window.location.href = `Index.html#${product}`;
   }
 }
 
 function handleProductsLinkClick(event) {
   event.preventDefault();
-  const isMainPage = window.location.pathname.includes("Intro.html");
+  const isMainPage = window.location.pathname.includes("Index.html");
 
   if (isMainPage) {
       const menuSection = document.querySelector(".menu");
@@ -341,7 +341,7 @@ function handleProductsLinkClick(event) {
           menuSection.scrollIntoView({ behavior: "smooth" });
       }
   } else {
-      window.location.href = `Intro.html#menu`;
+      window.location.href = `Index.html#menu`;
   }
 }
 
